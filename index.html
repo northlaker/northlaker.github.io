@@ -21,7 +21,7 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Certified Solutions</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Services</a>
@@ -102,32 +102,18 @@
           <img class="card-img-top" src="images/pm.jpg" alt="">
           <div class="card-body">
             <h2 class="card-title">Project Management</h2>
+            <hr>
             <p class="card-text">
               <ul>
+                <li>Requirements: customer; product</li>
                 <li>Agile/Scrum</li>
                 <li>Risk Analysis</li>
                 <li>Scheduling</li>
                 <li>Resource allocation</li>
+                <li>Userability study</li>
+                <li>Execution, mornitoring, mitigation</li>
                 <li>Progress tracking & schedule adjustment</li>
-              </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/dev.jpg" alt="">
-          <div class="card-body">
-            <h2 class="card-title">SW Development</h2>
-            <p class="card-text">
-              <ul>
-                <li>Languages: Java; Python; C/C++; Javascript</li>
-                <li>Platforms: AWS; Mobile; Desktop; Docker</li>
-                <li>Technologies: </li>
-                <li>Frameworks: spring; </li>
+                <li>Verification and validation</li>
               </ul>
             </p>
           </div>
@@ -140,13 +126,37 @@
         <div class="card h-100">
           <img class="card-img-top" src="images/arch.jpg" alt="">
           <div class="card-body">
-            <h2 class="card-title">Arch Consulting</h2>
+            <h2 class="card-title">Arch Design</h2>
+            <hr>
             <p class="card-text">
               <ul>
                 <li>Client/Server</li>
                 <li>Microservices</li>
                 <li>REST</li>
                 <li>Component/Container</li>
+              </ul>
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/dev.jpg" alt="">
+          <div class="card-body">
+            <h2 class="card-title">SW Development</h2>
+            <hr>
+            <p class="card-text">
+              <ul>
+                <li>Languages: Java; Python; C/C++; Javascript</li>
+                <li>Platforms: AWS; Mobile; Desktop; Docker</li>
+                <li>Technologies: vue; tomcat; hibernate; Dynomodb; postgres</li>
+                <li>Frameworks: spring; osgi </li>
+                <li>Tool chain: git/svn (SCM); eclipse (IDE); Jenkins (CI/CD);
+                  Jira/HPQC (issue tracking); sourceforge/collabnet (ALM);
+                </li>
               </ul>
             </p>
           </div>
@@ -161,8 +171,30 @@
   </div>
   <!-- /.container -->
 
+  <!-- popup. details: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Header</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <!--
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        -->
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Certified Solutions 2019</p>
     </div>
